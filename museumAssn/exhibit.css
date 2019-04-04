@@ -1,0 +1,18 @@
+
+body {
+    min-height: 100vh;  /* needed to make sure body fills up window */
+}
+
+header {
+  background-color: rgb(249, 172, 120);
+  text-color: white;
+}
+
+main {
+
+}
+
+footer {
+  background-color: rgb(249, 172, 120);
+  text-color: rgb(201, 82, 61);
+}
