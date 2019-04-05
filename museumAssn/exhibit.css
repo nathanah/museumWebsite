@@ -1,14 +1,86 @@
-
 body {
     min-height: 100vh;  /* needed to make sure body fills up window */
+    font-family: helvetica;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
+  background-color: white;
+  color: rgb(60, 63, 153);
+}
+
+#pageTitle{
+}
+
+#museumName {
+  color: rgb(201, 82, 61);
+  font-family: montserrat, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+nav {
+  color: black;
+  font-weight: 400;
+}
+
+main {
+
+}
+
+#title {
   background-color: rgb(249, 172, 120);
   color: white;
 }
 
-main {
+#headerImage{
+
+}
+
+#author{
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#artName{
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 100;
+}
+
+#sectionHeader{
+  border-bottom: 2px solid rgb(153,153,153);
+  color: rgb(201, 82, 61);
+}
+
+#sectionTitle{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#sectionSubtitle{
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+#sketch{
+
+}
+
+#more {
+
+}
+
+#expand{
+
+}
+
+#corridor{
+
+}
+
+#less{
 
 }
 
@@ -17,24 +89,18 @@ footer {
   color: rgb(201, 82, 61);
 }
 
-
-#top {
-  background-color: white;
-  color: black;
+footerTitle {
+  font-family: montserrat, sans-serif;
+  font-weight: bold;
+  font-style: normal;
 }
 
-nav {
-
+info {
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-#bruce {}
-#blue {}
-#title {}
-#subtitle {}
-#more {}
-#readMore{}
-#less {}
 #place {}
-footerTitle {}
-info {}
+
 #hours {}
