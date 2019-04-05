@@ -5,9 +5,16 @@ body {
     font-style: normal;
 }
 
+img{
+  max-width: 480px;
+  height: auto;
+  width: auto;
+}
+
 header {
   background-color: white;
   color: rgb(60, 63, 153);
+
   display: flex;
   flex-wrap: wrap-reverse;
   flex-direction: row;
@@ -29,6 +36,7 @@ nav {
   display: inline;
   color: black;
   font-weight: 400;
+
   flex-grow: 1;
   align-self: flex-end;
 }
@@ -49,13 +57,12 @@ main {
 
 }
 
-title.img{
-  flex-grow: 1;
-  flex-shrink: 2;
+#headerImage{
+  flex: 1 1 30%;
 }
 
-title.p{
-  flex-grow: 20;
+#headerTitle{
+  flex: 1 0 60%;
 }
 
 #author{
