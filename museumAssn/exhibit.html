@@ -13,14 +13,13 @@
 <body>
 
   <header>
+
+      <span id="pageTitle">
+          jan shrem and maria <span id="museumName">manetti shrem museum</span> of art
+      </span>
       <nav>
         Home | About | Contact
       </nav>
-      <div id="pageTitle">
-        <p>
-          jan shrem and maria <span id="museumName">manetti shrem museum</span> of art
-        </p>
-      </div>
   </header>
 
   <main>
@@ -29,13 +28,13 @@
 
       <img id="HeaderImage" src="header.jpg" alt="Header image">
 
-      <div>
+      <span>
         <p>
           <span id="author">Bruce Nauman</span>
           <br>
           <span id="artName">Blue and Yellow Corridor</span>
         </p>
-      </div>
+      </span>
     </div>
 
     <div id="sectionHeader">
@@ -63,10 +62,10 @@
 
     <img id="sketch" src="sketch.jpg" alt="sketch.jpg">
 
-    <button id="more">Read more →</button>
+    <div id="collapsed">
+    <div id="expand" >
 
-    <div id="expand">
-
+          <a id="more" href="#expand">Read more →</a>
       <p>
         Few living artists have done as much to expand the boundaries
         of art since 1960 as Bruce Nauman. During the mid-late 1960s -
@@ -101,7 +100,7 @@
 
       <img id="corridor" src="corridor.jpg" alt="corridor.jpg">
 
-      <button id="less">Read less →</button>
+      <a id="less" href="#collapsed">Read less →</a>
 
     </div>
 
@@ -111,7 +110,7 @@
 
 <footer>
 
-  <div id="place">
+  <span id="place">
 
     <div class="footerTitle">
       <p>Manetti Shrem Museum</p>
@@ -122,9 +121,9 @@
       <li>Davis, CA 95616</li>
     </ul>
 
-  </div>
+  </span>
 
-  <div id="hours">
+  <span id="hours">
 
     <div class="footerTitle">
       <p>Hours</p>
@@ -137,7 +136,7 @@
       <li>Monday: Closed</li>
     </ul>
 
-  </div>
+  </span>
 
 </footer>
 

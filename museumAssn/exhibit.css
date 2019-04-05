@@ -8,19 +8,23 @@ body {
 header {
   background-color: white;
   color: rgb(60, 63, 153);
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 
 #pageTitle{
+
 }
 
 #museumName {
   color: rgb(201, 82, 61);
-  font-family: montserrat, sans-serif;
+  font-family: "montserrat", sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 
 nav {
+  display: inline;
   color: black;
   font-weight: 400;
 }
@@ -69,11 +73,16 @@ main {
 }
 
 #more {
-
+  color: rgb(201, 82, 61);
+  background-color: white;
+  outline: none;
+  border: none;
+  text-decoration: underline;
 }
 
 #expand{
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #corridor{
@@ -81,7 +90,35 @@ main {
 }
 
 #less{
+  color: rgb(201, 82, 61);
+}
 
+#expand p,
+#less {
+	display: none;
+}
+
+#expand:target p,
+#expand:target #less {
+	display: block;
+}
+
+#expand:target #more {
+	display: none;
+}
+
+#expand img,
+#less {
+	display: none;
+}
+
+#expand:target img,
+#expand:target #less {
+	display: block;
+}
+
+#expand:target #more {
+	display: none;
 }
 
 footer {
@@ -89,13 +126,13 @@ footer {
   color: rgb(201, 82, 61);
 }
 
-footerTitle {
+.footerTitle {
   font-family: montserrat, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 
-info {
+.info {
   font-family: montserrat, sans-serif;
   font-weight: 500;
   font-style: normal;
