@@ -18,7 +18,8 @@ header {
   display: flex;
   flex-wrap: wrap-reverse;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 10px 10px 10px 10px;
 }
 
 #pageTitle{
@@ -74,6 +75,14 @@ main {
   font-size: 2.5em;
   font-style: italic;
   font-weight: 100;
+}
+
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #sectionHeader{
@@ -147,6 +156,11 @@ main {
 footer {
   background-color: rgb(249, 172, 120);
   color: rgb(201, 82, 61);
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .footerTitle {
@@ -161,6 +175,10 @@ footer {
   font-style: normal;
 }
 
-#place {}
+#place {
+  border: 1px solid black;
+}
 
-#hours {}
+#hours {
+  border: 1px solid black;
+}
