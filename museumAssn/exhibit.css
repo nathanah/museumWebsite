@@ -66,7 +66,7 @@ nav {
 }
 
 #img1{
- max-height: 275px;
+ max-height: 250px;
 }
 
 #headerTitle{
@@ -75,12 +75,12 @@ nav {
 }
 
 #author{
-  font-size: 5.25em;
+  font-size: 4.3em;
   font-weight: bold;
 }
 
 #artName{
-  font-size: 3em;
+  font-size: 2.7em;
   font-style: italic;
   font-weight: 100;
 }
@@ -112,12 +112,12 @@ main {
 }
 
 #sectionTitle{
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
 }
 
 #sectionSubtitle{
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 300;
   padding-bottom: 30px;
 }
@@ -132,7 +132,7 @@ main {
 }
 
 #sketch {
-  max-width: 35vw;
+  max-width: 40vw;
   margin-left: 50px;
   margin-bottom: 0px;
 
@@ -210,17 +210,31 @@ img{
 
 p {
   padding: 30px 0px 0px 0px;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 a {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 /*
-Put tablet CSS in here
+Put tablet CSS in here (I'm saying ~800px)
 */
 
+@media only screen and (max-width: 810px) {
+  body{
+    font-size: 12px;
+  }
+}
+
 /*
-Put mobile CSS in here
+Put mobile CSS in here (I'm saying ~480px)
 */
+
+@media only screen and (max-width: 480px) {
+
+  body{
+    font-size: 8px;
+  }
+
+}
