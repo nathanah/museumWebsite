@@ -9,7 +9,9 @@ body {
 header {
   background-color: white;
   color: rgb(60, 63, 153);
+}
 
+#top {
   display: flex;
   flex-wrap: wrap-reverse;
   flex-direction: row;
@@ -18,12 +20,19 @@ header {
 }
 
 main {
-
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 footer {
   background-color: rgb(249, 172, 120);
   color: rgb(201, 82, 61);
+
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
 
   display: flex;
   flex-wrap: wrap;
@@ -111,9 +120,19 @@ nav {
 #section1text{
   flex: 1 1 30%;
 }
+p {
+  padding: 30px 0px 30px 0px;
+}
 
-#section1Image {
+#section1image{
+  float: right;
+}
+
+#sketch {
   flex: 1 1 50%;
+  max-width: 35vw;
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 #corridor{
@@ -123,6 +142,8 @@ nav {
 #sectionHeader{
   border-bottom: 2px solid rgb(153,153,153);
   color: rgb(201, 82, 61);
+  padding-bottom: 20px;
+  margin-right: 20px;
 }
 
 #sectionTitle{
@@ -133,6 +154,7 @@ nav {
 #sectionSubtitle{
   font-size: 1.5em;
   font-weight: 300;
+  padding-bottom: 30px;
 }
 
 #more {
@@ -148,7 +170,7 @@ nav {
   flex-wrap: wrap-reverse;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
 }
 
 #section2text{
@@ -158,8 +180,8 @@ nav {
 #section2Image {
   flex: 1 1 30%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 0px 30px 0px 30px;
 }
 
 #less{
@@ -179,9 +201,9 @@ nav {
 }
 
 #place {
-  border: 1px solid black;
+  flex: 1 1 25%;
 }
 
 #hours {
-  border: 1px solid black;
+  flex: 1 1 50%;
 }
