@@ -76,7 +76,7 @@
         <br>
 
         <div>
-          <a id="more" href="#expand">Read more →</a>
+          <button id="more" onclick="more()">Read more →</button>
         </div>
 
       </div>
@@ -124,7 +124,7 @@
         <br>
 
         <div>
-          <a id="less" href="#collapsed">Read less →</a>
+          <button id="less" onclick="more()">Read less →</button>
         </div>
 
       </div>
@@ -164,5 +164,18 @@
   </footer>
 
 </body>
+<script>
+function more() {
+  var x = document.getElementById("section2");
+  var more = document.getElementById("more");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+    more.style.display = "none";
+  } else {
+    x.style.display = "none";
+    more.style.display = "flex";
+  }
+}
+</script>
 
 </html>

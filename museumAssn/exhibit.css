@@ -125,11 +125,12 @@ main {
 
 #more {
   color: rgb(201, 82, 61);
+  font-size: 1.5em;
   background-color: white;
   outline: none;
   border: none;
   text-decoration: underline;
-  display: none;
+  cursor:pointer;
 }
 
 #sketch {
@@ -143,7 +144,7 @@ main {
 }
 
 #section2 {
-  display: flex;
+  display: none;
   flex-wrap: wrap-reverse;
   flex-direction: row;
   justify-content: space-around;
@@ -167,6 +168,12 @@ main {
 
 #less{
   color: rgb(201, 82, 61);
+  font-size: 1.5em;
+  background-color: white;
+  outline: none;
+  border: none;
+  text-decoration: underline;
+  cursor:pointer;
 }
 
 footer {
