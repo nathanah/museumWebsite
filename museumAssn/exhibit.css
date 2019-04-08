@@ -1,9 +1,15 @@
+/*
+
+Putting things in order of appearance in HTML
+
+*/
+
 body {
   min-height: 100vh;  /* needed to make sure body fills up window */
   font-family: helvetica;
   font-weight: 300;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 16px;
 }
 
 header {
@@ -12,42 +18,16 @@ header {
 }
 
 #top {
+  margin: 40px 50px 40px 50px;
+
   display: flex;
   flex-wrap: wrap-reverse;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 10px 0px 10px 0px;
-}
-
-main {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-footer {
-  background-color: rgb(249, 172, 120);
-  color: rgb(201, 82, 61);
-
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-img{
-  max-width: 100%;
-  max-height: 100%;
-  min-width: 320px;
+  justify-content: space-between;
 }
 
 #pageTitle{
-
+  font-size: 1.2em;
 }
 
 #museumName {
@@ -61,12 +41,11 @@ nav {
   display: inline;
   color: black;
   font-weight: 400;
+  font-size: 1.3em;
 
   flex-grow: 2;
   align-self: flex-end;
 }
-
-
 
 #title {
   background-color: rgb(249, 172, 120);
@@ -77,7 +56,6 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
 }
 
 #headerImage{
@@ -88,7 +66,7 @@ nav {
 }
 
 #img1{
- max-height: 400px;
+ max-height: 275px;
 }
 
 #headerTitle{
@@ -97,14 +75,21 @@ nav {
 }
 
 #author{
-  font-size: 7vw;
+  font-size: 5.25em;
   font-weight: bold;
 }
 
 #artName{
-  font-size: 4vw;
+  font-size: 3em;
   font-style: italic;
   font-weight: 100;
+}
+
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .section1 {
@@ -114,26 +99,9 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+
 #section1text{
   flex: 1 1 30%;
-}
-p {
-  padding: 30px 0px 30px 0px;
-}
-
-#section1image{
-  float: right;
-}
-
-#sketch {
-  flex: 1 1 50%;
-  max-width: 35vw;
-  margin-left: 50px;
-  margin-bottom: 50px;
-}
-
-#corridor{
-
 }
 
 #sectionHeader{
@@ -144,12 +112,12 @@ p {
 }
 
 #sectionTitle{
-  font-size: 1.5em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 #sectionSubtitle{
-  font-size: 1.5em;
+  font-size: 2.5em;
   font-weight: 300;
   padding-bottom: 30px;
 }
@@ -160,6 +128,15 @@ p {
   outline: none;
   border: none;
   text-decoration: underline;
+  display: none;
+}
+
+#sketch {
+  max-width: 35vw;
+  margin-left: 50px;
+  margin-bottom: 0px;
+
+  flex: 1 1 50%;
 }
 
 #section2 {
@@ -170,19 +147,43 @@ p {
   align-items: flex-end;
 }
 
+#section2Image {
+
+}
+
+#corridor{
+  padding: 0px 30px 0px 0px;
+  height: auto;
+  width: 100%;
+
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+}
+
 #section2text{
   flex: 1 1 60%;
 }
 
-#section2Image {
-  flex: 1 1 30%;
-  display: flex;
-  justify-content: center;
-  padding: 0px 30px 0px 30px;
-}
-
 #less{
   color: rgb(201, 82, 61);
+}
+
+footer {
+  background-color: rgb(249, 172, 120);
+  color: rgb(201, 82, 61);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#place {
+  flex: 1 1 25%;
 }
 
 .footerTitle {
@@ -197,10 +198,29 @@ p {
   font-style: normal;
 }
 
-#place {
-  flex: 1 1 25%;
-}
-
 #hours {
   flex: 1 1 50%;
 }
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 320px;
+}
+
+p {
+  padding: 30px 0px 0px 0px;
+  font-size: 1.5em;
+}
+
+a {
+  font-size: 1.5em;
+}
+
+/*
+Put tablet CSS in here
+*/
+
+/*
+Put mobile CSS in here
+*/
