@@ -131,6 +131,7 @@ main {
   border: none;
   text-decoration: underline;
   cursor:pointer;
+  padding: 0px 0px 0px 0px;
 }
 
 #sketch {
@@ -174,6 +175,7 @@ main {
   border: none;
   text-decoration: underline;
   cursor:pointer;
+  padding: 0px 0px 0px 0px;
 }
 
 footer {
