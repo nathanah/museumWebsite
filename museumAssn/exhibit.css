@@ -292,7 +292,7 @@ Put mobile CSS in here (I'm saying ~550px)
 @media only screen and (max-width: 550px) {
 
   body{
-    font-size: 8px;
+    font-size: 10px;
   }
 
   #top {
@@ -369,5 +369,4 @@ Put mobile CSS in here (I'm saying ~550px)
     padding: 0px 13px 13px 13px;
     flex-direction: column;
   }
-
 }
