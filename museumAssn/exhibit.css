@@ -66,7 +66,7 @@ nav {
 }
 
 #img1{
- max-height: 250px;
+ max-height: 300px;
  min-width: 200px;
  min-height: 135px;
 }
@@ -94,7 +94,7 @@ main {
   margin-top: 30px;
 }
 
-.section1 {
+#section1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -110,7 +110,6 @@ main {
   border-bottom: 2px solid rgb(153,153,153);
   color: rgb(201, 82, 61);
   padding-bottom: 20px;
-  margin-right: 20px;
 }
 
 #sectionTitle{
@@ -258,6 +257,10 @@ Put tablet CSS in here (I'm saying ~800px)
     margin: 15px 25px 15px 25px;
   }
 
+  #sectionHeader{
+    padding-bottom: 10px;
+  }
+
   #sketch{
     margin: 0px 0px 0px 15px;
     min-width: 220px;
@@ -293,8 +296,78 @@ Put mobile CSS in here (I'm saying ~550px)
   }
 
   #top {
-    margin: 40px 50px 40px 50px;
+    margin: 10px 13px 10px 13px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
+  nav{
+    font-size: 2em;
+  }
+
+  #pageTitle{
+    margin: 10px 0px 0px 0px;
+  }
+
+  #title{
+    justify-content: space-between;
+  }
+
+  #headerImage{
+    flex: 1 1 0;
+    overflow: hidden;
+    max-height: 150px;
+    min-width: 100vw;
+  }
+
+  #img1{
+    min-height: 155px;
+    min-width: 245px;
+    max-height: none;
+    width: 100%;
+    height: auto;
+
+    margin-top: 50px;
+  }
+
+  main {
+    margin: 8px 13px 8px 13px;
+  }
+
+  #sectionHeader{
+    padding-bottom: 5px;
+  }
+
+  #section1{
+    flex-direction: column;
+  }
+
+  #sketch{
+    margin: 8px 0px 0px 0px;
+    min-width: 220px;
+    max-width: 90vw;
+  }
+
+  #section2{
+    flex-direction: column-reverse;
+  }
+
+  #corridor{
+    margin: 8px 0px 0px 0px;
+  }
+
+  #place{
+    margin: 0px 8px 0px 0px;
+    min-width: 160px;
+  }
+
+  p{
+    padding: 8px 0px 0px 0px;
+  }
+
+  footer{
+    padding: 0px 13px 13px 13px;
+    flex-direction: column;
   }
 
 }
