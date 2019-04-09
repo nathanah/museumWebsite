@@ -10,6 +10,9 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: 16px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -27,7 +30,7 @@ header {
 }
 
 #pageTitle{
-  font-size: 1.2em;
+  font-size: 1.18em;
 }
 
 #museumName {
@@ -61,13 +64,13 @@ nav {
 #headerImage{
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex: 1 1 40%;
+  flex: 1 2 300px;
+  margin: 0px 0px 0px 50px
 }
 
 #img1{
- max-height: 300px;
- min-width: 200px;
+ max-height: 280px;
+ min-width: 160px;
  min-height: 135px;
 }
 
@@ -77,12 +80,12 @@ nav {
 }
 
 #author{
-  font-size: 4.25em;
+  font-size: 7.9vw;
   font-weight: bold;
 }
 
 #artName{
-  font-size: 2.65em;
+  font-size: 5vw;
   font-style: italic;
   font-weight: 100;
 }
@@ -92,6 +95,7 @@ main {
   margin-right: 50px;
   margin-bottom: 30px;
   margin-top: 30px;
+  flex: 1 0 auto;
 }
 
 #section1 {
@@ -255,12 +259,21 @@ Put tablet CSS in here (I'm saying ~800px)
 
   #headerImage{
       flex: 1 1 0;
+      margin: 0px 0px 0px 0px;
   }
 
   #img1{
     max-height: 180px;
     min-height: 155px;
     min-width: 245px;
+  }
+
+  #author{
+    font-size: 6vw;
+  }
+
+  #artName{
+    font-size: 4vw;
   }
 
   main {
@@ -328,6 +341,7 @@ Put mobile CSS in here (I'm saying ~550px)
     overflow: hidden;
     max-height: 150px;
     min-width: 100vw;
+    margin: 0px 0px 0px 0px;
   }
 
   #img1{
@@ -338,6 +352,18 @@ Put mobile CSS in here (I'm saying ~550px)
     height: auto;
 
     margin-top: 50px;
+  }
+
+  #author{
+    font-size: 8vw;
+  }
+
+  #artName{
+    font-size: 5vw;
+  }
+
+  #headerTitle{
+    margin: 10px 0px 10px 0px;
   }
 
   main {
@@ -378,5 +404,6 @@ Put mobile CSS in here (I'm saying ~550px)
   footer{
     padding: 0px 13px 13px 13px;
     flex-direction: column;
+    flex-shrink: 0;
   }
 }
