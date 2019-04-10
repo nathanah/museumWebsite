@@ -85,7 +85,7 @@ nav {
 }
 
 #artName{
-  font-size: 5vw;
+  font-size: 4.8vw;
   font-style: italic;
   font-weight: 100;
 }
@@ -103,7 +103,7 @@ main {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #section1text{
@@ -139,17 +139,16 @@ main {
 }
 
 #sketch {
-  max-width: 35vw;
+  max-width: 40vw;
   min-width: 200px;
   height: auto;
   width: 100%;
   margin: 0px 0px 0px 30px;
 
-  flex: 0 1 35%;
+  flex: 0 1 40%;
 }
 
 #section2 {
-  display: none;
   flex-wrap: wrap-reverse;
   flex-direction: row;
   justify-content: space-around;
@@ -232,11 +231,19 @@ img{
 p {
   padding: 30px 0px 0px 0px;
   font-size: 1.25em;
-  line-height: 2em;
+  line-height: 1.2em;
 }
 
 a {
   font-size: 1.25em;
+}
+
+.shown{
+  display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 /*
@@ -382,6 +389,10 @@ Put mobile CSS in here (I'm saying ~550px)
     margin: 8px 0px 0px 0px;
     min-width: 220px;
     max-width: 90vw;
+  }
+
+  .sketch{
+    display: none;
   }
 
   #section2{
