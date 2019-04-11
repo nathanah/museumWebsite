@@ -98,33 +98,30 @@ main {
   flex: 1 0 auto;
 }
 
-#section1 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-#section1text{
-  flex: 1 1 30%;
+#section1{
+  overflow:auto;
 }
 
 #sectionHeader{
-  border-bottom: 2px solid rgb(153,153,153);
-  color: rgb(201, 82, 61);
-  padding-bottom: 20px;
+  padding: 0px 0px 0px 0px;
+}
+
+#sectionBorder{
+  border-bottom: 1px solid rgb(153,153,153);
+  margin-top: 20px;
+  max-width: 100%;
 }
 
 #sectionTitle{
-  font-size: 2em;
+  color: rgb(201, 82, 61);
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 #sectionSubtitle{
-  font-size: 2em;
+  color: rgb(201, 82, 61);
+  font-size: 1.5em;
   font-weight: 300;
-  padding-bottom: 30px;
 }
 
 #more {
@@ -138,36 +135,33 @@ main {
   padding: 0px 0px 0px 0px;
 }
 
+#section1image{
+  max-width: 35vw;
+  margin: 0px 0px 0px 30px;
+  float:right;
+}
+
 #sketch {
-  max-width: 40vw;
-  min-width: 200px;
+  min-width: 280px;
   height: auto;
   width: 100%;
-  margin: 0px 0px 0px 30px;
 
-  flex: 0 1 40%;
 }
 
 #section2 {
-  flex-wrap: wrap-reverse;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
+  overflow: auto;
+}
+
+#section2image{
+  margin: 0px 30px 0px 0px;
+  max-width: 35vw;
+  float: left;
 }
 
 #corridor{
-  margin: 0px 30px 0px 0px;
   height: auto;
   width: 100%;
   min-width: 160px;
-
-  flex: 0 1 30%;
-  display: flex;
-  justify-content: center;
-}
-
-#section2text{
-  flex: 1 1 60%;
 }
 
 #less{
@@ -223,6 +217,7 @@ footer {
 }
 
 img{
+  display:block;
   max-width: 100%;
   max-height: 100%;
   min-width: 320px;
@@ -238,12 +233,12 @@ a {
   font-size: 1.25em;
 }
 
-.shown{
-  display: flex;
-}
-
 .hidden{
   display: none;
+}
+
+.shown{
+
 }
 
 /*
@@ -291,13 +286,26 @@ Put tablet CSS in here (I'm saying ~800px)
     padding-bottom: 10px;
   }
 
-  #sketch{
+  #sectionBorder{
+    border-bottom: 1px solid rgb(153,153,153);
+    margin-top: 10px;
+  }
+
+  #section1image{
+    max-width: 35vw;
     margin: 0px 0px 0px 15px;
-    min-width: 220px;
+    float:right;
+  }
+
+  #sketch{
+    min-width: 180px
+  }
+
+  #section2image{
+    margin: 0px 15px 0px 0px;
   }
 
   #corridor{
-    margin: 0px 15px 0px 0px;
   }
 
   #place{
@@ -381,14 +389,36 @@ Put mobile CSS in here (I'm saying ~550px)
     padding-bottom: 5px;
   }
 
+  #sectionBorder{
+    border-bottom: 1px solid rgb(153,153,153);
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+
   #section1{
     flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  #section1image{
+    margin: 8px 0px 0px 0px;
+    max-width: 100%;
+    float: none;
+    order: 99;
+    flex: 1 1 auto;
   }
 
   #sketch{
-    margin: 8px 0px 0px 0px;
-    min-width: 220px;
-    max-width: 90vw;
+    width: 100%;
+    height: auto;
   }
 
   .sketch{
@@ -396,10 +426,24 @@ Put mobile CSS in here (I'm saying ~550px)
   }
 
   #section2{
-    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  #section2image{
+    float: none;
+    flex: 1 1 auto;
+    order: 99;
+    max-width: 100%;
+    align-self: center;
+    margin: 0px 0px 0px 0px;
   }
 
   #corridor{
+    max-width: 100%;
     margin: 8px 0px 0px 0px;
   }
 
@@ -416,5 +460,9 @@ Put mobile CSS in here (I'm saying ~550px)
     padding: 0px 13px 13px 13px;
     flex-direction: column;
     flex-shrink: 0;
+  }
+
+  .shown{
+    display: flex;
   }
 }
