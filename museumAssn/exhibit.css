@@ -126,7 +126,7 @@ main {
 
 #more {
   color: rgb(201, 82, 61);
-  font-size: 1.5em;
+  font-size: 1.3em;
   background-color: white;
   outline: none;
   border: none;
@@ -166,7 +166,7 @@ main {
 
 #less{
   color: rgb(201, 82, 61);
-  font-size: 1.5em;
+  font-size: 1.3em;
   background-color: white;
   outline: none;
   border: none;
@@ -198,7 +198,7 @@ footer {
 }
 
 .footerTitle p{
-  font-size: 1em;
+  font-size: .75em;
 }
 
 .info {
@@ -209,6 +209,7 @@ footer {
 }
 
 .info li{
+  font-size: .75em;
   padding: 0px 0px 10px 0px;
 }
 
@@ -248,15 +249,19 @@ Put tablet CSS in here (I'm saying ~800px)
 @media only screen and (max-width: 810px) {
 
   body{
-    font-size: 12px;
+    font-size: 16px;
   }
 
   #top {
     margin: 20px 25px 20px 25px;
   }
 
-  #pageTitle{
+  nav{
     font-size: 1em;
+  }
+
+  #pageTitle{
+    font-size: .8em;
   }
 
   #title{
@@ -335,7 +340,7 @@ Put mobile CSS in here (I'm saying ~550px)
 @media only screen and (max-width: 550px) {
 
   body{
-    font-size: 10px;
+    font-size: 16px;
   }
 
   #top {
@@ -345,10 +350,11 @@ Put mobile CSS in here (I'm saying ~550px)
   }
 
   nav{
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   #pageTitle{
+    font-size: .7em;
     margin: 10px 0px 0px 0px;
   }
 
@@ -411,6 +417,14 @@ Put mobile CSS in here (I'm saying ~550px)
     justify-content: space-around;
     align-items: flex-start;
     overflow: hidden;
+  }
+
+  #sectionTitle{
+    font-size: 1.3em;
+  }
+
+  #sectionSubtitle{
+    font-size: 1.3em;
   }
 
   #section1image{
