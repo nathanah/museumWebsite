@@ -70,8 +70,8 @@ nav {
 
 #img1{
  max-height: 280px;
- min-width: 160px;
- min-height: 135px;
+ min-width: 150px;
+ min-height: 125px;
 }
 
 #headerTitle{
@@ -114,13 +114,13 @@ main {
 
 #sectionTitle{
   color: rgb(201, 82, 61);
-  font-size: 1.5em;
+  font-size: 1.45em;
   font-weight: bold;
 }
 
 #sectionSubtitle{
   color: rgb(201, 82, 61);
-  font-size: 1.5em;
+  font-size: 1.45em;
   font-weight: 300;
 }
 
