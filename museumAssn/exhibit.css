@@ -300,6 +300,14 @@ Put tablet CSS in here (I'm saying ~800px)
     margin-top: 10px;
   }
 
+  #sectionTitle{
+    font-size: 1.3em;
+  }
+
+  #sectionSubtitle{
+    font-size: 1.3em;
+  }
+
   #section1image{
     max-width: 35vw;
     margin: 0px 0px 0px 15px;
