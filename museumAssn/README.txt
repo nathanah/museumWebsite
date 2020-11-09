@@ -1,5 +1,5 @@
-Elisabeth Henkens ID: 914001438
-Nathan Hoffman ID: 913987236
+Elisabeth Henkens
+Nathan Hoffman
 
 Our HTML expects images to be in directory ../assets/img.png
 Laptop: > 810px
